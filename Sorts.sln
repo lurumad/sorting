@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48006A38-7E7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{46948E69-BD18-4123-87D0-A59824E86A74}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shorts", "src\Shorts\Shorts.csproj", "{C3377538-746F-4F66-915A-7A9B3AE269E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorts", "src\Sorts\Sorts.csproj", "{C3377538-746F-4F66-915A-7A9B3AE269E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shorts.Tests", "test\Shorts.Tests\Shorts.Tests.csproj", "{38D7D000-A0A5-40C0-9159-9DAC99C6873E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorts.Tests", "test\Sorts.Tests\Sorts.Tests.csproj", "{38D7D000-A0A5-40C0-9159-9DAC99C6873E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

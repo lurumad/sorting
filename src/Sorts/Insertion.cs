@@ -1,8 +1,8 @@
-﻿namespace Shorts
+﻿namespace Sorts
 {
     public class Insertion
     {
-        public int[] Short(int [] numbers)
+        public int[] Sort(int [] numbers)
         {
             for (var i = 1; i < numbers.Length - 1; i++)
             {

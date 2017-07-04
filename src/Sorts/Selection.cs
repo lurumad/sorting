@@ -1,8 +1,8 @@
-﻿namespace Shorts
+﻿namespace Sorts
 {
     public class Selection
     {
-        public int[] Short(int [] numbers)
+        public int[] Sort(int [] numbers)
         {
             for (var i = 0; i < numbers.Length - 1; i++)
             {

@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Shorts
+namespace Sorts
 {
     public class Merge
     {
-        public int[] Short(int [] numbers)
+        public int[] Sort(int [] numbers)
         {
             if (numbers.Length <= 1)
             {
@@ -16,8 +16,8 @@ namespace Shorts
             var left = Slice(numbers, 0, leftLenght);
             var right = Slice(numbers, leftLenght, rightLength);
 
-            left = Short(left);
-            right = Short(right);
+            left = Sort(left);
+            right = Sort(right);
 
             if (left[leftLenght - 1] >= right[0])
             {
