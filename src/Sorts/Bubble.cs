@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Shorts
+namespace Sorts
 {
     public class Bubble
     {
         private int swap = -1;
 
-        public int[] Short(int [] numbers)
+        public int[] Sort(int [] numbers)
         {
             do
             {
