@@ -77,7 +77,7 @@ namespace Sorts.Tests
         public int Compare(User x, User y)
         {
             if (x.Age == y.Age) return 0;
-            return x.Age >= y.Age ? 1 : -1;
+            return x.Age > y.Age ? 1 : -1;
         }
     }
 
