@@ -11,7 +11,23 @@ namespace Sorts
         {
             this.comparer = comparer ?? Comparer<T>.Default;
         }
-        
+
+        public T[] Sort(T[] list)
+        {
+            Sort(list, 0, list.Length - 1);
+            return list;
+        }
+        private void Sort(T[] list, int left, int right)
+        {
+            if (right > left)
+            {
+                int pivotidx = left;
+                pivotidx = Partition(list, left, right, pivotidx);
+                Sort(list, left, pivotidx);
+                Sort(list, pivotidx + 1, right);
+            }
+        }
+
         private int Partition(T[] list, int left, int right, int pivotidx)
         {
             T pivot = list[pivotidx];
@@ -30,28 +46,11 @@ namespace Sorts
             return left;
         }
 
-        private void Sort(T[] list, int left, int right)
-        {
-            if (right > left)
-            {
-                int pivotidx = left;
-                pivotidx = Partition(list, left, right, pivotidx);
-                Sort(list, left, pivotidx);
-                Sort(list, pivotidx + 1, right);
-            }
-        }
-
         private void swap(T[] list, int a, int b)
         {
             T temp = list[a];
             list[a] = list[b];
             list[b] = temp;
-        }
-
-        public T[] Sort(T[] list)
-        {
-            Sort(list, 0, list.Length - 1);
-            return list;
         }
     }
 }
