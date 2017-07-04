@@ -14,7 +14,9 @@ namespace Sorts.Tests
         {
             var unorderedNumbers = new[] { 2, 102, 2, 4, 45, 6, 100 };
             var orderedNumbers = new[] { 2, 2, 4, 6, 45, 100, 102 };
+            
             new QuickSort<int>().Sort(unorderedNumbers);
+            
             orderedNumbers.SequenceEqual(unorderedNumbers).Should().BeTrue();
         }
 
@@ -22,7 +24,6 @@ namespace Sorts.Tests
         public void sort_users_by_name_with_custom_comparer()
         {
             var users = GivenAnUserList();
-
             var sortedNames = new[] { "Angel", "Esteban", "Pedro", "Zapatero" };
 
             new QuickSort<User>(new UserNameComparer()).Sort(users);
@@ -35,7 +36,6 @@ namespace Sorts.Tests
         public void sort_users_by_age_with_custom_comparer()
         {
             var users = GivenAnUserList();
-
             var sortedAges = new[] { 13, 20, 20, 45 };
 
             new QuickSort<User>(new UserAgeComparer()).Sort(users);
